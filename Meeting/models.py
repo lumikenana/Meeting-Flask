@@ -1,42 +1,5 @@
 from Meeting import db
 
-"""
-会议室预定系统：
-    User：
-        userid PK
-        username not Null
-        telephone
-        email
-        departid FK
-    Depart:
-        departid PK
-        departname not null
-    MeetingRoom:
-        roomid PK
-        roomname UK + not Null
-        level NN
-    BookedMeetingRoom
-        id PK
-        bookerid FK
-        roomid FK
-        booktime not Null  :
-            {
-                1~5： 周一~周五
-            }
-            {
-                1: 9-10
-                2: 10-11
-                3: 11-12
-                4: 12-13
-                5: 13-14
-                6: 14-15
-                7: 15-16
-                8: 16-17
-                9: 17-18
-            }
-            以eg: 1_1/1_3...方式拼接
-"""
-
 
 class User(db.Model):
     __tablename__ = 'user'
